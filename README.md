@@ -26,7 +26,7 @@ docker pull ghcr.io/40docs/pptx-extractor:latest
 docker run -p 5000:5000 \
   -v $(pwd)/uploads:/app/uploads \
   -v $(pwd)/slides:/app/slides \
-  ghcr.io/<your-org>/pptx-extractor:latest
+  ghcr.io/40docs/pptx-extractor:latest
 ```
 
 This maps:
