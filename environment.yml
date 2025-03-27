@@ -1,0 +1,12 @@
+name: pptx_extractor_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - flask
+  - pip
+  - pip:
+      - python-pptx
+      - pillow
+      - pdf2image
+      - PyMuPDF
