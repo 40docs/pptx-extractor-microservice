@@ -24,7 +24,7 @@ docker pull ghcr.io/40docs/pptx-extractor:latest
 
 ```bash
 docker run -p 5000:5000 \
-  -v $(pwd)/uploads:/app/uploads \
+  -v $(pwd)/notes:/app/notes \
   -v $(pwd)/slides:/app/slides \
   ghcr.io/40docs/pptx-extractor:latest
 ```
