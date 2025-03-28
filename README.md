@@ -31,7 +31,7 @@ docker run -p 5000:5000 \
 
 This maps:
 - Flask app to `localhost:5000`
-- Local `uploads/` and `slides/` directories for viewing results
+- Local `notes/` and `slides/` directories for viewing results
 
 ---
 
