@@ -24,7 +24,7 @@ def extract():
 
     try:
         notes = extract_notes(pptx_path)
-        image_paths = convert_pptx_to_images(pptx_path, SLIDES_DIR)
+        convert_pptx_to_images(pptx_path, SLIDES_DIR)
 
         # Build response by matching slide number to image
         slides_data = []

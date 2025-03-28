@@ -32,6 +32,6 @@ def convert_pptx_to_images(pptx_path: Path, output_dir: Path, image_format="png"
     print(f"✅ {len(images)} slides extracted from PDF")
 
     for i, img in enumerate(images, start=1):
-        img.save(output_dir / f"slide_{i}.{image_format}")
+        img.save(output_dir / f"slide_{i:02d}.{image_format}")
 
     return sorted(output_dir.glob(f"slide_*.{image_format}"))
