@@ -26,4 +26,4 @@ SHELL ["conda", "run", "-n", "pptx_extractor_env", "/bin/bash", "-c"]
 EXPOSE 5000
 
 # Run the Flask app
-CMD ["conda", "run", "-n", "pptx_extractor_env", "python", "main.py"]
+CMD ["/bin/bash", "-c", "source activate pptx_extractor_env && python main.py"]
