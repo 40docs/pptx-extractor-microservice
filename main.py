@@ -12,6 +12,10 @@ UPLOAD_DIR.mkdir(exist_ok=True)
 
 app = Flask(__name__)
 
+@app.route("/health", methods=["GET"])
+def health_check():
+    return jsonify({"status": "ok"}), 200
+
 @app.route("/extract", methods=["POST"])
 def extract():
     if "file" not in request.files:
